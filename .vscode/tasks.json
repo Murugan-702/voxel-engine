@@ -7,9 +7,12 @@
             "command": "D:/mingw64/bin/g++.exe",
             "args": [
                 "${workspaceFolder}/src/*.cpp",
+                "${workspaceFolder}/src/meshes/*.cpp",
                 "${workspaceFolder}/src/glad.c",
                 "-I", "${workspaceFolder}/include",      
-                "-L", "${workspaceFolder}/lib",          // library folder
+                "-L", "${workspaceFolder}/lib",     // library folder
+               "-lSDL3",
+    
                 "-lglfw3dll",                            // link GLFW
                 "-lopengl32",                             // OpenGL on Windows
                 "-lgdi32",                                // Windows GUI library
